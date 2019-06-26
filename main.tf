@@ -11,7 +11,7 @@ provider "vsphere" {
 
 }
 resource "vsphere_virtual_machine" "linux-vm" {
-  count = 1
+  count = "${var.instances}"
   name  = "${var.name}-${random_uuid.test.result}"
 
   resource_pool_id = "${data.vsphere_compute_cluster.compute_cluster.resource_pool_id}"
