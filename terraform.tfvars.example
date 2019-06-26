@@ -1,0 +1,5 @@
+vsphere_user = "my-user-name@vsphere.local"
+
+vsphere_password = "my-password"
+
+vsphere_server = "my-server-address"
