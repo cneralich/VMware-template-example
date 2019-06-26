@@ -89,3 +89,10 @@ data "vsphere_virtual_machine" "template" {
   name          = "${var.vmtemplate}"
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
+
+#---------------------------------------------------------------------------------------------------------------------
+#  RANDOM IDENTIFIER RESOURCES
+# --------------------------------------------------------------------------------------------------------------------
+
+### Create Random ID for Identification
+resource "random_uuid" "test" {}
